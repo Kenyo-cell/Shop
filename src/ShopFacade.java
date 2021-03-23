@@ -1,8 +1,8 @@
 import Filters.*;
-import Products.Product;
 import Products.Type;
 import Sorters.*;
-import StorageDecorators.*;
+import StorageDecorators.FilteredStorage;
+import StorageDecorators.SortedStorage;
 import StorageDecorators.Storage;
 
 import java.util.Scanner;
@@ -36,7 +36,8 @@ public class ShopFacade {
                 System.out.println("Enter count of products you want to buy");
                 int count = scanner.nextInt();
                 basket.add(storage.get(productNumber - 1), count);
-            } catch (Exception e) { }
+            } catch (Exception e) {
+            }
         }
     }
 

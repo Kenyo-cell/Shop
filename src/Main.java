@@ -21,7 +21,7 @@ public class Main {
             "4. Refresh filters\n5. Print my basket\n6. Buy\n7. End";
 
     public static void main(String[] args) {
-	    Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Hello, dear customer, please have enjoy to use our digital/virtual shop");
         String userInput = "";
         boolean end = false;
